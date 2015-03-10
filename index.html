@@ -7,7 +7,7 @@
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -16,11 +16,34 @@
 
   <div class='navbar navbar-inverse navbar-static-top'>  
     <div class='container '>
-      <a href='/' class='navbar-brand'>Blasting Off With Bootstrap</a>
-      <ul class='nav navbar-nav navbar-right'>
+      
+      <div class="navbar-header">
+        <a href='/' class='navbar-brand'>Blasting Off With Bootstrap</a>
+
+        <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+           <span class='sr-only'> Toggle navigation </span> 
+           <span class='icon-bar'></span>
+           <span class='icon-bar'></span>
+           <span class='icon-bar' ></span>
+        </button>
+      </div>
+
+      <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
         <li> <a href='#'>Tickets</a> </li>
         <li> <a href='#'>Stations</a> </li>
-        <li> <a href='#'>About</a> </li>    
+        <li> 
+          <a href='#' data-target='#' data-toggle='dropdown'>About <span class='caret'></span></a> 
+          <ul class='dropdown-menu'>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Contact US</a></li>
+            <li class='divider'></li>
+            <li><a href="#">Blog</a></li>
+            <li class='divider'></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+
+        </li>    
       </ul>
     </div>
   </div>
@@ -61,6 +84,82 @@
     </div>
   </div>
 
+
+  <div class='quote'>
+      <div class='container'>
+        <blockquote>
+          <p>Any sufficiently advanced technology is indistinguishable from magic.</p>
+          <footer>Arthur C. Clarke in <cite title="Source Title">Profiles of the Future</cite></footer>
+        </blockquote>
+      </div>
+  </div>
+
+  <div class='container transport-systems'>
+    <div class='row'>
+      <div class='col-md-10 col-md-offset-1'>
+        <h2>Our Transport Systems</h2>
+        <p>Learn more about our transport systems to find out which one is right for you. Pick out the mode of transport that works for your budget and risk level.</p>
+      </div>
+    </div>
+
+    <div class='row text-center'>
+        <div class='transporter col-md-3 col-md-offset-1 well'>
+          <h3>Transporter</h3>
+          <ul class='list-unstyled'>
+            <li>8 second travel time</li>
+            <li>Chance of death only 1 in 7,593</li>
+            <li>Low price of only $15.99!</li>
+          </ul>
+          <p><button class='btn btn-info'><i class='glyphicon glyphicon-transfer'></i> Beam Me Up!</button></p>
+        </div>
+        <div class='space-elevator col-md-3 col-md-offset-1 well'>
+          <h3>Space Elevator</h3>
+          <ul class='list-unstyled'>
+            <li>8 hour scenic ride</li>
+            <li>Only 1 horrific death per 12,456</li>
+            <li>Only $45.99 if you book today!</li>
+          </ul>
+          <p><button class='btn btn-info'><i class='glyphicon glyphicon-sort'></i> Board the Elevator!</button></p>
+        </div>
+        <div class='rocketbus col-md-3 col-md-offset-1 well'>
+          <h3>RocketBus</h3>
+          <ul class='list-unstyled'>
+            <li>8 minute scenic ride</li>
+            <li>Plunging death rate of under 1/100k</li>
+            <li>$74.99 lets you blast off today!</li>
+          </ul>
+          <p><button class='btn btn-info'><i class='glyphicon glyphicon-plane'></i> Blast Off!</button></p>
+        </div>
+    </div>  
+  </div>
+
+      
+
+
+   <div class='container'>
+      <div class='row'>
+        <div class='col-md-10 col-md-offset-1'>
+          <h2>Plan Your Trip Today!</h2>
+          <ul class="nav nav-tabs">
+            <li class='active'><a href='#time'>Today's Times</a></li>
+            <li><a href='#deals'>Hot Deals</a></li>
+            <li><a href='#forecast'>Forecast</a></li>
+          </ul>
+
+          <div class='tab-content'>
+            <div class='tab-pane fade active' id='time'>
+              <p>Today's Time here</p>
+            </div>
+            <div class='tab-pane fade' id='deals'>
+              <p>Deals here</p>
+            </div>
+            <div class='tab-pane fade' id='forecast'>
+              <p>Forecast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <!--   <div class="container-fluid">
     <div class="row">
@@ -123,10 +222,10 @@
       </div>
     </div>
 
-  <!--
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="bootstrap.js"></script>
-  -->
+  <script src="js/bootstrap.js"></script>
+  
 </body>
 
 </html>
